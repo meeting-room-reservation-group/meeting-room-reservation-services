@@ -46,9 +46,15 @@ public class UserAccountService {
 	@Produces( MediaType.APPLICATION_JSON )
 	@Path("/{id}")
 	public UserAccount getById(@PathParam("id") final String id) {
-		UserAccount userAccount = repo.getById(id);
-		logger.info("user-account: " + userAccount.getName());
-		return userAccount;
+		try {
+			UserAccount userAccount = repo.getById(id);
+			logger.info("user-account: " + userAccount.getName());
+			return userAccount;
+		}
+		catch (IllegalArgumentException iae) {
+			logger.info("user-account: Nothing found for 'id' with value '" + id + "'");
+		}
+		return null;
 	}
 
 	@GET
@@ -56,7 +62,12 @@ public class UserAccountService {
 	@Path("/query")
 	public UserAccount search(@QueryParam("name") final String name) {
 		UserAccount userAccount = repo.search(name);
-		logger.info("user-account: " + userAccount.getName());
+		if (userAccount != null) {
+			logger.info("user-account: " + userAccount.getName());
+		}
+		else {
+			logger.info("user-account: Nothing found for 'name' with value '" + name + "'");
+		}
 		return userAccount;
 	}
 
