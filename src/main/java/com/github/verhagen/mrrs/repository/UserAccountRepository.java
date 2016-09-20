@@ -66,7 +66,7 @@ public class UserAccountRepository {
 			throw new IllegalArgumentException("Argument 'id' should not be null.");
 		}
 		if (! accountsById.containsKey(idCln)) {
-			throw new IllegalArgumentException("Not a known user account id '" + idCln + "'");
+			throw new IllegalArgumentException("Not a known user account id '" + idCln + "'.");
 		}
 
 		return accountsById.get(id);
