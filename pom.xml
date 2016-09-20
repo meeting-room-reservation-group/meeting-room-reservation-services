@@ -139,13 +139,15 @@
 						<id>add-cucumber-resource</id>
 						<phase>generate-resources</phase>
 						<goals>
-							<goal>add-resource</goal>
+							<goal>add-test-resource</goal>
 						</goals>
 						<configuration>
 							<resources>
 								<resource>
 									<directory>src/bdd/resources</directory>
+									<!--
 									<targetPath>test-classes</targetPath>
+									-->
 								</resource>
 							</resources>
 						</configuration>
@@ -294,6 +296,32 @@
 								<include>*Tests.java</include>
 							</includes>
 							-->
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		
+		<profile>
+			<id>bdd-test</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-failsafe-plugin</artifactId>
+						<version>2.19.1</version>
+						<executions>
+							<execution>
+								<goals>
+									<goal>integration-test</goal>
+									<goal>verify</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<includes>
+								<include>*Tests.java</include>
+							</includes>
 						</configuration>
 					</plugin>
 				</plugins>
