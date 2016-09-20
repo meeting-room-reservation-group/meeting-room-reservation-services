@@ -1,7 +1,7 @@
 package com.github.verhagen.mrrs.repository.csv;
 
 import java.util.Collections;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 import org.apache.commons.lang3.StringUtils;
@@ -23,7 +23,7 @@ public class CsvRoom {
 		Set<Facility> facilitiesColl = Collections.emptySet();
 		final String facilitiesCln = StringUtils.trimToNull(getFacilities());
 		if (facilitiesCln != null) {
-			facilitiesColl = new HashSet<>();
+			facilitiesColl = new LinkedHashSet<>();
 			final String[] facilityArray = facilitiesCln.split(",");
 			for (String facilityStr : facilityArray) {
 				facilitiesColl.add(new Facility(facilityStr));
