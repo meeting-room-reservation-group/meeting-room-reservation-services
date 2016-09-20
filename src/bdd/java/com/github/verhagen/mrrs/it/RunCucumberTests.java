@@ -8,7 +8,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin = { "html:target/cucumber/report.html", "json:target/cucumber-report.json" }, 
-		features = { "src/bdd/resources/" })
+		features = { "src/bdd/resources/" },
+		tags = { "@run" })
 public class RunCucumberTests {
 	// No implementation required
 }
