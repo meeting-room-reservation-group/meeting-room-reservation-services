@@ -1,9 +1,9 @@
 package com.github.verhagen.mrrs.service;
 
-import static io.restassured.RestAssured.get;
+//import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.when;
 import static org.hamcrest.Matchers.equalTo;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+//import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 import org.junit.Test;
 
