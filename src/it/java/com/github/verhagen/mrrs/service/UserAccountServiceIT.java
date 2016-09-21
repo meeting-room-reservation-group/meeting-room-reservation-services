@@ -1,9 +1,13 @@
 package com.github.verhagen.mrrs.service;
 
+import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.when;
 import static org.hamcrest.Matchers.equalTo;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 import org.junit.Test;
+
+import io.restassured.http.ContentType;
 
 public class UserAccountServiceIT {
 	private final String basePath = "api/v1.0";
@@ -13,9 +17,11 @@ public class UserAccountServiceIT {
 		when().
         	get(basePath + "/users").
         then().
-        	statusCode(200);
-        	
-        	
+        	log().body().
+        	statusCode(200).
+        	contentType(ContentType.JSON);
+		
+//		get("/products").then().assertThat().body(matchesJsonSchemaInClasspath("products-schema.json"));
 	}
 
 	@Test
