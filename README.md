@@ -12,6 +12,6 @@ __INFO__ This project is based on the [Meeting Room Reservation System - Blog](h
 
 	http://localhost:8080/
 
-	http://localhost:8080/webapi/users
-	http://localhost:8080/webapi/users/query?name=Tintin
-	http://localhost:8080/webapi/users/query?name=captain%20haddock
+	http://localhost:8080/api/v1.0/users
+	http://localhost:8080/api/v1.0/users/query?name=Tintin
+	http://localhost:8080/api/v1.0/users/query?name=captain%20haddock
