@@ -3,6 +3,7 @@ package com.github.verhagen.mrrs.domain;
 import static org.junit.Assert.assertEquals;
 
 import java.util.LinkedHashSet;
+import java.util.HashSet;
 import java.util.Set;
 
 import org.hamcrest.core.IsEqual;
@@ -74,8 +75,6 @@ public class RoomTest {
 		assertEquals(capacity, room.getCapacity());
 		assertEquals(facilities, room.getFacilities());
 		assertEquals(2, room.getFacilities().size());
-		// TODO Check facilities
-//		assertTrue(room.getFacilities().contains(""));
 		assertEquals("Moscow, 02.04, 10, [ whiteboard, beamer ]", room.toString());
 	}
 
