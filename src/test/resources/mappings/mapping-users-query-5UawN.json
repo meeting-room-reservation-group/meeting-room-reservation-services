@@ -1,0 +1,16 @@
+{
+  "uuid" : "8642822a-da24-3f30-ae30-bab3190a627d",
+  "request" : {
+    "url" : "/api/v1.0/users/query?name=calculus",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-users-query-5UawN.json",
+    "headers" : {
+      "Date" : "Thu, 22 Sep 2016 12:15:07 GMT",
+      "Content-Type" : "application/json",
+      "Server" : "Jetty(8.1.14.v20131031)"
+    }
+  }
+}

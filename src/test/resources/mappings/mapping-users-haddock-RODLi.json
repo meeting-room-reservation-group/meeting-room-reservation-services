@@ -1,0 +1,16 @@
+{
+  "uuid" : "3b1e566d-d21f-3aef-b54a-031600ff1de1",
+  "request" : {
+    "url" : "/api/v1.0/users/haddock",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-users-haddock-RODLi.json",
+    "headers" : {
+      "Date" : "Thu, 22 Sep 2016 12:15:07 GMT",
+      "Content-Type" : "application/json",
+      "Server" : "Jetty(8.1.14.v20131031)"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "uuid" : "effa8a81-aea3-384b-a32f-c5c090a39136",
+  "request" : {
+    "url" : "/api/v1.0/users",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-v1.0-users-wtvDH.json",
+    "headers" : {
+      "Date" : "Thu, 22 Sep 2016 12:15:06 GMT",
+      "Content-Type" : "application/json",
+      "Server" : "Jetty(8.1.14.v20131031)"
+    }
+  }
+}

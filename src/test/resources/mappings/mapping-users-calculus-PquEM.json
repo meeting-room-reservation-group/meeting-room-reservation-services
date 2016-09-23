@@ -1,0 +1,16 @@
+{
+  "uuid" : "c5bb8707-aa8f-3a41-8527-35a4b2ae107a",
+  "request" : {
+    "url" : "/api/v1.0/users/calculus",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-users-calculus-PquEM.json",
+    "headers" : {
+      "Date" : "Thu, 22 Sep 2016 12:15:07 GMT",
+      "Content-Type" : "application/json",
+      "Server" : "Jetty(8.1.14.v20131031)"
+    }
+  }
+}
