@@ -15,3 +15,11 @@ __INFO__ This project is based on the [Meeting Room Reservation System - Blog](h
 	http://localhost:8080/api/v1.0/users
 	http://localhost:8080/api/v1.0/users/query?name=Tintin
 	http://localhost:8080/api/v1.0/users/query?name=captain%20haddock
+
+
+## Launch WireMock for Recording
+
+[WireMock Record](http://wiremock.org/docs/record-playback/)
+
+	java  -jar wiremock-2.1.12-standalone.jar  --proxy-all="http://localhost:8080"  --record-mappings  --verbose
+
