@@ -34,10 +34,10 @@ public class CsvRoomRepositoryTest {
 		RoomRepository roomRepo = CsvRoomRepository.importBy(new FileReader(file));
 
 		assertEquals("London", roomRepo.getByLocation("C20").getName());
-		assertEquals("London, C20, 50, [ stage, 2 beamers ]", roomRepo.getByLocation("C20").toString());
+		assertEquals("London, C20, 50, [ 2 beamers, stage ]", roomRepo.getByLocation("C20").toString());
 
 		assertEquals("Paris", roomRepo.getByLocation("C40").getName());
-		assertEquals("Paris, C40, 800, [ white board, 2 large screens ]", roomRepo.getByLocation("C40").toString());
+		assertEquals("Paris, C40, 800, [ 2 large screens, white board ]", roomRepo.getByLocation("C40").toString());
 	}
 
 

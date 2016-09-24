@@ -2,7 +2,7 @@ package com.github.verhagen.mrrs.domain;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 import org.hamcrest.core.IsEqual;
@@ -63,7 +63,7 @@ public class RoomTest {
 		String name = "Moscow";
 		String location = "02.04";
 		int capacity = 10;
-		Set<Facility> facilities = new HashSet<>();
+		Set<Facility> facilities = new LinkedHashSet<>();
 		facilities.add(new Facility("whiteboard"));
 		facilities.add(new Facility("beamer"));
 		Room room = new Room(name, location, capacity, facilities);
@@ -72,7 +72,7 @@ public class RoomTest {
 		assertEquals(location, room.getLocation());
 		assertEquals(capacity, room.getCapacity());
 		assertEquals(facilities, room.getFacilities());
-		assertEquals("Moscow, 02.04, 10, [ beamer, whiteboard ]", room.toString());
+		assertEquals("Moscow, 02.04, 10, [ whiteboard, beamer ]", room.toString());
 	}
 
 }
