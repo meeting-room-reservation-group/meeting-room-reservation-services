@@ -4,3 +4,8 @@ script: "mvn clean verify -P code-coverage"
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+notifications:
+  slack:
+    rooms:
+      - mrrs:jcI0XR8DczUkduC22ieiQN1Q#general
