@@ -6,3 +6,10 @@
 # Meeting Room Reservation Services
 
 __INFO__ This project is based on the [Meeting Room Reservation System - Blog](http://meeting-room-reservation-group.github.io/)
+
+
+## Team Communication
+ 
+[![slack](https://raw.githubusercontent.com/meeting-room-reservation-group/meeting-room-reservation-group.github.io/master/images/slack_cmyk-112x32.png)](https://mrrs.slack.com)
+ 
+Join our group __mrrs__ on slack.
